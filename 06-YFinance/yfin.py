@@ -3,7 +3,7 @@ import yfinance as yf
 from newsapi import NewsApiClient
 
 # Set OpenAI API key
-openai.api_key = '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'  # Replace with your OpenAI API key
+openai.api_key = ''  # Replace with your OpenAI API key
 
 # Function to fetch stock data
 def get_stock_data(symbol, period="5d"):
@@ -14,7 +14,7 @@ def get_stock_data(symbol, period="5d"):
 # Function to fetch financial news using News API
 def get_financial_news(query="stock market", language="en", num_articles=5):
     # Initialize News API client
-    newsapi = NewsApiClient(api_key='592ca6c710194901b6ac06ee10534e6f')  # Replace with your News API key
+    newsapi = NewsApiClient(api_key='')  # Replace with your News API key
     # Get financial news articles
     all_articles = newsapi.get_everything(q=query, language=language, page_size=num_articles)
     articles = []
